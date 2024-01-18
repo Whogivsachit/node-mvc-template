@@ -1,0 +1,29 @@
+module.exports = (sequelize, DataTypes) => {
+    const Stock = sequelize.define("Stock", {
+        category: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        name: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        description: {
+            type: DataTypes.TEXT,
+            allowNull: true
+        },
+        price: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
+        inStock: {
+            type: DataTypes.BOOLEAN,
+            allowNull: false
+        },
+        orderLink: {
+            type: DataTypes.STRING,
+            allowNull: false
+        }
+    });
+    return Stock;
+};
