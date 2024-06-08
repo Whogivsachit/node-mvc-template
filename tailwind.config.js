@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: 'jit',
-  content: ["./views/**/*.{ejs,html}"],
+  content: ["./src/views/**/*.{ejs,html}"],
   presets: [],
   darkMode: 'class', // or 'class'
   theme: {
@@ -40,12 +40,12 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
-      w : {
-        background: '#17191C',
-        foreground: '#1F2125',
-        accent: '#7A86FD',
-        borders: '#3C3E45',
-      }
+      background: '#17191C',
+      foreground: '#1D1F23',
+      accent: '#FA4033',
+      borders: '#3C3E45',
+      pill: 'rgba(238,238,238,.2)',
+      muted: '#9C9C9E'
     }),
     columns: {
       auto: 'auto',
